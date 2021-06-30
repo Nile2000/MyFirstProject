@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projNag.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Nagpur</title>
+
+
+
+    <style type="text/css">
+        
+         /*---...Portfolio---.....*/
+
+ .portfolio {
+   height: 1550px;
+   width: 100%;
+   padding: 130px 0px 50px;
+
+  
+ }
+
+ .place {
+       background-color:#5433ff;
+       height: 1550px;
+        padding: 130px 0px 50px;
+ }
+
+
+
+.place h1{
+   font-size: 60px;
+   font-weight: bold;
+   font-family: 'Nunito', sans-serif;
+  
+}
+
+.card
+{
+    height: 600px;
+    background-color: #ff7700;
+    border: 2px solid #cc5500;
+    box-shadow: 10px 20px 20px black;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+}
+.card-img{
+    height: 300px;
+}
+
+
+
+  .place p{
+   color: #c5c4c8;;
+   font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.card-text {
+    font-family: 'Nunito', sans-serif;
+    color: #c5c4c8;
+}
+
+
+/*.................... Banner- text.....................*/
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 4px solid rgb(146, 143, 143);
+    border-top: 4px solid rgb(146, 143, 143);
+}
+
+
+   
+}
+
+.banner-text h1 {
+    font-size: 80px;
+   font-family: 'Nunito',sans-serif;
+
+}
+
+
+.banner-text a {
+    font-weight: bold;
+}
+
+
+
+
+@media only screen and (max-width: 479px){
+    .place{
+        height: 4000px;
+    }
+    .card{
+        height: 600px;
+    }
+    
+}
+
+@media  (min-width:480px) and (max-width:767px){
+    .place{
+        height: 4000px;
+    }
+    .card{
+        height: 600px;
+    }
+    
+}
+
+
+    </style>
+
+
+
+
+
+
+
+</head>
+<body>
+
+    <!--............... navbar ...................-->
+
+    <nav class="navbar navbar-expand-lg btn-light navbar-light fixed-top">
+			
+        <div class="container ">
+            <a href="" class="navbar-brand text-warning font-weight-bold">NAGPUR</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_id" aria-controls="navbar_id" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=" icon navbar-toggler-icon bg-dark"></span>   
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-center" id="navbar_id">
+
+                <ul class="navbar-nav ml-auto ">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-success active">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#places" class="nav-link text-success ">PLACES</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#video" class="nav-link  text-success">VIDEO</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#item" class="nav-link  text-success">FOOD</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link  text-success">EDUCATION</a>
+                    </li>
+
+
+                </ul>
+                
+            </div>
+
+
+
+        </div>
+
+       
+
+
+    </nav>
+
+
+
+     <!--..................... Slider......................... -->
+
+     <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1" ></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="Images/NgpHD.jpg" alt="NgpHD" width="100%" height="750px">
+               
+            </div>
+
+            <div class="carousel-item">
+                <img src="Images/bridge2.jpg" alt="Bridge" width="100%" height="750px"  >
+                
+             </div>
+
+            <div class="carousel-item">
+                <img src="Images/ramjhula.jpg" alt="Ramjhula"  width="100%" height="750px" >
+               
+            </div>
+
+         </div>
+
+        <!-- Left and right controls -->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+             <span class="carousel-control-prev-icon"></span>
+          </a>
+         <a class="carousel-control-next" href="#demo" data-slide="next" >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+
+    </div>
+
+    <!-- banner Text -->
+
+    <div class="banner-text">
+      <h1 class="text-white">NAGPUR</h1>
+      <p class="text-white">OrangeCity | CenterOfIndia | JungleSafari</p>
+      <a href="#" class="btn btn-outline-primary btn-lg">Explore</a>
+    </div>
+    
+
+    
+
+
+
+        <!--.................... PORTFOLIO .................. -->
+
+
+    <section id="places" class="Portfolio place ">
+        
+        <div class="container text-center ">
+            <h1 >PLACES</h1>
+            <p >Explore the Journey of Nagpur with us.</p>
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/railstat.jpg" class="card-img img-fluid" width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">Railway station</h2>
+                        <p class="card-text">The Rail road is like a lie, you have to keep building it, to make it stand.</p>
+                       </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/metroStation.jpg" class="card-img img-fluid"  width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">Metro Station</h2>
+                        <p class="card-text">The Right train of thoughts can take u better to a better station in life!</p>
+                       </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/Junglesafari.jpg" class="card-img img-fluid"  width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">Jungle Safari</h2>
+                        <p class="card-text">Life is like a Jungle Safari ride, where every ride is a farrago of joy and despair.</p>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <br>
+
+
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/Ramtek.jpg" class="card-img img-fluid"  width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">Ramtek</h2>
+                        <p class="card-text">"The temple of art is built in words." </p>
+                       </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/tajbagh.jpg" class="card-img img-fluid"  width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">TAJBAGH</h2>
+                        <p class="card-text">Beautiful place to visit.</p>
+                       </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+
+                    <div class="card">
+                       <img src="Images/swamiNarayan.jpg" class="card-img img-fluid"  width="100%" height="300px">
+                       <div class="card-body">
+                        <h2 class="card-title text-warning">Swami Narayan Mandir</h2>
+                        <p class="card-text">God chanting gives you inner peace.</p>
+                       </div>
+                    </div>
+
+                </div>
+
+
+
+
+                    
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+      
+
+      <!-- VIDEO -->
+
+    <section>
+
+
+       <div id="video" class="video">
+
+            <div class="container">
+                <h1 class="text-center">
+                    VIDEO
+                </h1>
+
+
+                <div class="row">
+                    <div class="col-sm-6">
+                         <video controls width="300px" height="350px" loop><source src="Images/Nagpur.mp4" type="video/mp4" ></video>
+                    </div>
+                    <div class="col-sm-6 text-center box">
+                        <h2 class="">My Nagpur</h2>
+                        <p class="lead ">The orange city of India- Nagpur. Its also the greenest city after Bangalore and its true. Its green, green! Nagpur is advancing gradually into a big one!</p>
+
+                    
+                        
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- Our Delicious Item  -->
+
+    <section id="item" class="ourteam">
+        
+        <div class="container text-center">
+            <h1>Our Amazing Items</h1>
+            <p>A Receipe has no soul. You ,as a cook, must bring soul to the receipe.</p>
+
+            <div class="row teamsetting">
+
+                <div class=" col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Images/TarriPoha.jpg" class=" ice figure-img img-circle rounded-circle" height="250px" width="250px">
+                        <figcaptain>
+                            <h3>Tarri Poha</h3>
+                            <p class="figure-caption"> Yummy, Bitter in taste !</p>
+                        </figcaptain>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Images/HaldiramSweet.jpg" class="ice figure-img img-circle rounded-circle" height="250px" width="250px">
+                        <figcaptain>
+                            <h3>Haldiram Sweets</h3>
+                            <p class="figure-caption"> Yummy ,Sweet in Taste !</p>
+                        </figcaptain>
+                    </figure>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-10 col-12 d-block m-auto">
+                    <figure class="figure">
+                        <img src="Images/noodles.jpg" class="ice figure-img img-circle rounded-circle" height="250px" width="250px">
+                        <figcaptain>
+                            <h3> Chinese</h3>
+                            <p class="figure-caption"> Yummy, Bitter in taste !</p>
+                        </figcaptain>
+                    </figure>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <footer class="footer">
+        <h6 class="text-center bg-dark text-white">Copyright @ Jun -2021 , Design by NileshDeshmukh</h6>
+    </footer>
+
+
+
+
+   
+     
+
+
+
+    
+</body>
+</html>
