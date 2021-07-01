@@ -35,7 +35,7 @@
  }
 
  .place {
-       background-color:#5433ff;
+       background:linear-gradient(#4567B7,#cc5500 );
        height: 1550px;
         padding: 130px 0px 50px;
  }
@@ -49,15 +49,24 @@
   
 }
 
+.place h1:hover {
+    font-size:70px;
+}
+
 .card
 {
     height: 600px;
-    background-color: #ff7700;
+    background-color: #b17d55;
     border: 2px solid #cc5500;
     box-shadow: 10px 20px 20px black;
     border-bottom-left-radius: 50px;
     cursor: pointer;
 }
+
+.card:hover {
+    height: 610px;
+}
+
 .card-img{
     height: 300px;
 }
@@ -90,12 +99,12 @@
     border-bottom-right-radius: 50px;
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: 4px solid rgb(146, 143, 143);
-    border-top: 4px solid rgb(146, 143, 143);
+    border-top: 4px solid rgb(235, 188, 188);
 }
 
 
    
-}
+
 
 .banner-text h1 {
     font-size: 80px;
@@ -111,12 +120,26 @@
 
 
 
-@media only screen and (max-width: 479px){
+@media  (max-width: 479px){
     .place{
         height: 4000px;
     }
     .card{
         height: 600px;
+    }
+
+    .banner-text h1{
+        font-size: 30px;
+    }
+
+    .ourteam{
+   height: 1400px;  
+   }
+
+   
+   .video {
+    background:linear-gradient(rgb(241, 208, 177),#b4a073, #1c6270);
+    height: 1000px;
     }
     
 }
@@ -128,7 +151,21 @@
     .card{
         height: 600px;
     }
+
+    .banner-text h1{
+        font-size: 40px;
+    }
+
+     
+
     
+    
+}
+
+@media  (min-width:768px) and (max-width:991px){
+    .banner-text h1{
+       font-size: 60px;
+    }
 }
 
 
@@ -143,9 +180,11 @@
 </head>
 <body>
 
+    <section>
+ 
     <!--............... navbar ...................-->
 
-    <nav class="navbar navbar-expand-lg btn-light navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg btn-light navbar-black fixed-top">
 			
         <div class="container ">
             <a href="" class="navbar-brand text-warning font-weight-bold">NAGPUR</a>
@@ -175,9 +214,7 @@
                         <a href="#item" class="nav-link  text-success">FOOD</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link  text-success">EDUCATION</a>
-                    </li>
+                  
 
 
                 </ul>
@@ -210,17 +247,17 @@
         <div class="carousel-inner">
 
             <div class="carousel-item active">
-                <img src="Images/NgpHD.jpg" alt="NgpHD" width="100%" height="750px">
+                <img src="Images/NgpHD.jpg" alt="NgpHD" width="100%" height="100%">
                
             </div>
 
             <div class="carousel-item">
-                <img src="Images/bridge2.jpg" alt="Bridge" width="100%" height="750px"  >
+                <img src="Images/bridge2.jpg" alt="Bridge" width="100%" height="100%"  >
                 
              </div>
 
             <div class="carousel-item">
-                <img src="Images/ramjhula.jpg" alt="Ramjhula"  width="100%" height="750px" >
+                <img src="Images/ramjhula.jpg" alt="Ramjhula"  width="100%" height="100%">
                
             </div>
 
@@ -243,6 +280,9 @@
       <p class="text-white">OrangeCity | CenterOfIndia | JungleSafari</p>
       <a href="#" class="btn btn-outline-primary btn-lg">Explore</a>
     </div>
+
+
+</section>
     
 
     
@@ -458,10 +498,11 @@
 
 
    
-     
+      
 
 
 
     
 </body>
+
 </html>
